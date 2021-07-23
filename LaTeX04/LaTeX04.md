@@ -1,10 +1,10 @@
 ---
 layout: "layout"
 title:  "LaTeX Tugas Akhir"
-permalink: /LaTeX03/
+permalink: /LaTeX04/
 ---
 
-* [Downloard TARBALL](../tarballs/LaTeX03.tar.bz2)
+* [Downloard TARBALL](../tarballs/LaTeX04.tar.bz2)
 * [PDF](JennyWren.pdf)
 
 <br>

@@ -13,9 +13,10 @@ These are LaTeX examples.
 * [Example 03: Tugas Akhir (Report)](/LaTeX03/)
   * [PDF](LaTeX03/skripsi.pdf) (Result)
   * [TARBALL](tarballs/LaTeX03.tar.bz2) (Download)
-* [Example 04: Our Mutual Friend by Charles Dickens ](https://JennyWren.vlsm.org/)
-  * [PDF](https://jennywren.vlsm.org/LaTeX/JennyWren.pdf) (eBook)
-  * [Listing](https://jennywren.vlsm.org/004.html)
+* [Example 04: eBook](/LaTeX04)
+  * [PDF](LaTeX04/JennyWren.pdf) (Result)
+  * [TARBALL](tarballs/LaTeX04.tar.bz2) (Download)
+  * [Our Mutual Friend by Dickens](https://jennywren.vlsm.org/LaTeX/JennyWren.pdf) ([More](https://jennywren.vlsm.org/))
 
 <br>
 Qapla!
