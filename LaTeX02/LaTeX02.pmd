@@ -1,11 +1,20 @@
 ---
 layout: "layout"
-title:  "LaTeX Beamer Presentation"
+title:  "Beamer Presentation with LaTeX"
 permalink: /LaTeX02/
 ---
 
 * [Downloard TARBALL](../tarballs/LaTeX02.tar.bz2)
 * [PDF](os00.pdf)
+
+<br>
+### os00.tex
+
+```
+{% raw %}
+(> src/os00.tex <)
+{% endraw %}
+```
 
 <br>
 ### [Makefile](Makefile)

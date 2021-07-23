@@ -14,7 +14,7 @@ These are LaTeX examples.
 * [LaTeX: Tugas Akhir Fasilkom UI)](/LaTeX03/)
   * [PDF](LaTeX03/skripsi.pdf) (Result)
   * [TARBALL](tarballs/LaTeX03.tar.bz2) (Download)
-* [LaTeX: Thesis IF-ITB](/LaTeX05/)
+* [LaTeX: Tesis IF-ITB](/LaTeX05/)
   * [PDF](LaTeX05/thesis.pdf) (Result)
   * [TARBALL](tarballs/LaTeX05.tar.bz2) (Download)
 * [LaTeX: An eBook with Parts and Chapters](/LaTeX04)

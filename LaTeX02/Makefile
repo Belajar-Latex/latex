@@ -1,4 +1,4 @@
-# REV002 Fri 23 Jul 2021 13:59:08 WIB
+# REV003 Fri 23 Jul 2021 22:00:00 WIB
 # STARTX Tue Sep 13 09:30:20 WIB 2016
 # Adapted from Tobias Oetiker
 ###########################################################################
@@ -31,6 +31,7 @@ os00.pdf: src/os00.tex ${INCFILES} ${BRP} ${CHK00}
 	 $(PDFLATEX) os00 && \
 	 mv os00.pdf .. )
 	 rm pdfbuild/*
+         # # This is GitHub Page related. You might delete it ###############
 	 python ../assets/scripts/includeScript.py < LaTeX02.pmd > LaTeX02.md
 
 # 12 ######################################################################

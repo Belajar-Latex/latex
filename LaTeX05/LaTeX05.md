@@ -1,11 +1,75 @@
 ---
 layout: "layout"
-title:  "LaTeX Tugas Akhir"
+title:  "Contoh Tesis IT-ITB (LaTeX)"
+author: "Petra Novandi"
+address: "Jakarta"
 permalink: /LaTeX05/
 ---
 
 * [Downloard TARBALL](../tarballs/LaTeX05.tar.bz2)
 * [PDF](thesis.pdf)
+
+# Templat LaTeX Tesis Informatika ITB
+oleh: Petra Novandi <me@petrabarus.net>
+
+Dokumen ini merupakan templat LaTeX yang ditujukan untuk laporan
+tesis di program studi Teknik Informatika ITB. Templat ini penulis
+gunakan dalam penulisan laporan tesis penulis dan dengan semangat
+berbagi penulis memutuskan untuk mempublikasikan templat ini agar
+dapat digunakan oleh banyak orang.
+
+Silakan mengunduh, menggunakan, memodifikasi, dan menyebarkan
+templat ini. :)
+
+## Kebutuhan
+
+Program telah diuji dalam sistem operasi Linux Ubuntu 20.04 (RMS). Untuk melakukan instalasi
+perangkat lunak yang dibutuhkan, eksekusi perintah berikut.
+
+```
+sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+   biber  \
+   dvipng \
+   texlive-fonts-recommended \
+   texlive-latex-extra texlive-fonts-extra \
+   texlive-latex-recommended \
+   texlive-bibtex-extra      \
+   texlive-lang-other        \
+   xzdec
+
+```
+
+## Penggunaan
+
+Templat ini telah dilengkapi oleh skrip untuk melakukan kompilasi
+Makefile. Untuk melakukan kompilasi cukup eksekusi perintah berikut
+
+```
+make
+
+```
+
+Hasil kompilasi akan berada pada berkas  [thesis.pdf](thesis.pdf).
+
+
+## Kontribusi
+
+Templat ini dapat digunakan secara gratis, akan tetapi penulis sangat
+berharap adanya kritik serta saran dari pengguna untuk meningkatkan
+kualitas hasil dan penggunaan templat ini.
+
+Kritik dan saran tersebut dapat dikirim melalui URL
+<https://github.com/petrabarus/if-itb-latex/issues>.
+
+## Terima Kasih
+
+* Steven Lolong atas pemberian templat LaTeX yang asli.
+* Peb Ruswono Aryan atas bantuan pelengkapan struktur dokumen.
+
+## Catatan Tambahan
+
+* Ini merupakan fork dari <https://github.com/petrabarus/if-itb-latex/>.
+* Telah di test dengan Ubuntu 20.04 dengan sedikit penyesuaian.
 
 <br>
 ### THESIS
@@ -127,7 +191,7 @@ permalink: /LaTeX05/
 ```
 {% raw %}
 # (c) 2016-2021 Rahmat M. Samik-Ibrahim
-# REV03 Fri 23 Jul 2021 14:20:34 WIB
+# REV04 Fri 23 Jul 2021 21:00:00 WIB
 # START Tue Jul 12 15:02:37 WIB 2016
 
 ALL:	thesis.pdf
@@ -138,6 +202,7 @@ thesis.pdf:	thesis.tex
 	bibtex   thesis
 	pdflatex thesis
 	pdflatex thesis
+        # # This is GitHub Page related. You might delete it ###############
 	python ../assets/scripts/includeScript.py < LaTeX05.pmd > LaTeX05.md
 
 clean:

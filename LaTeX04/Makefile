@@ -1,5 +1,5 @@
 # (c) 2021-2021 Rahmat M. Samik-Ibrahim
-# REV01 Fri 23 Jul 2021 16:50:18 WIB
+# REV02 Fri 23 Jul 2021 22:00:00 WIB
 # START Fri 26 Mar 2021 12:07:29 WIB
 
 FILE1=JennyWren
@@ -21,6 +21,7 @@ $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
+        # # This is GitHub Page related. You might delete it ###############
 	python ../assets/scripts/includeScript.py < LaTeX04.pmd > LaTeX04.md
 	cp $(FILE1).pdf /tmp/231.pdf
 

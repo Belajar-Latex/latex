@@ -1,5 +1,5 @@
 # (c) 2021-2021 Rahmat M. Samik-Ibrahim
-# REV02 Fri 23 Jul 2021 12:45:26 WIB
+# REV03 Fri 23 Jul 2021 22:00:00 WIB
 # START Thu 25 Feb 2021 19:47:10 WIB
 
 FILE1=example01
@@ -15,6 +15,7 @@ ALL: $(FILE1).pdf
 $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
+        # # This is GitHub Page related. You might delete it ###############
 	python ../assets/scripts/includeScript.py < LaTeX01.pmd > LaTeX01.md
 
 cleanpdf: clean

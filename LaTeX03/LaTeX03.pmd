@@ -1,11 +1,20 @@
 ---
 layout: "layout"
-title:  "LaTeX Tugas Akhir"
+title:  "TA FASILKOM UI (LaTeX)"
 permalink: /LaTeX03/
 ---
 
 * [Downloard TARBALL](../tarballs/LaTeX03.tar.bz2)
 * [PDF](skripsi.pdf)
+
+<br>
+### skripsi.tex
+
+```
+{% raw %}
+(> skripsi.tex <)
+{% endraw %}
+```
 
 <br>
 ### [Makefile](Makefile)
