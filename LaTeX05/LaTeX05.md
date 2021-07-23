@@ -1,0 +1,152 @@
+---
+layout: "layout"
+title:  "LaTeX Tugas Akhir"
+permalink: /LaTeX05/
+---
+
+* [Downloard TARBALL](../tarballs/LaTeX05.tar.bz2)
+* [PDF](thesis.pdf)
+
+<br>
+### THESIS
+
+```
+{% raw %}
+%--------------------------------------------------------------------%
+% REV01: Fri 23 Jul 2021 20:08:29 WIB (RMS)
+% Berkas utama templat LaTeX.
+% author Petra Barus, Peb Ruswono Aryan
+%--------------------------------------------------------------------%
+% Berkas ini berisi struktur utama dokumen LaTeX yang akan dibuat.
+%--------------------------------------------------------------------%
+\documentclass[11pt, a4paper, onecolumn, oneside, final]{book}
+
+\input{if-itb-thesis.sty}
+\makeatletter
+\makeatother
+%\bibliography{references}
+\begin{document}
+
+    %Basic configuration
+    %\title{Pengembangan Aplikasi Pengumpulan Data Menggunakan \textit{Spreadsheet}}
+    \title{Pengembangan Kakas Pengumpulan Data dalam Format \textit{Spreadsheet}}
+    \date{}
+    \author{
+        Feryandi Nurdiantoro \\
+        NIM : 13513042
+    }   
+
+    \frontmatter
+    \input{000-cover}
+    \input{001-approval}
+    \input{002-statement}
+    \pagestyle{plain}
+    \input{003-abstract-id}
+    %\input{004-abstract-en}
+    \input{005-forewords}
+    \titleformat*{\section}{\centering\bfseries\Large\MakeUpperCase}
+    \tableofcontents
+    \addcontentsline{toc}{chapter}{DAFTAR ISI}
+    % \afterpage{\null\newpage}
+    % \addcontentsline{toc}{chapter}{DAFTAR LAMPIRAN}
+    {%
+        \let\oldnumberline\numberline%
+        \renewcommand{\numberline}{\figurename~\oldnumberline}%
+        \listoffigures%
+    }
+    \addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+    {%
+        \let\oldnumberline\numberline%
+        \renewcommand{\numberline}{\tablename~\oldnumberline}%
+        \listoftables%
+    }
+    \addcontentsline{toc}{chapter}{DAFTAR TABEL}
+
+    %----------------------------------------------------------------%
+    % Konfigurasi Bab
+    %----------------------------------------------------------------%
+    \renewcommand{\chaptername}{BAB}
+    \renewcommand{\thechapter}{\Roman{chapter}}
+    %----------------------------------------------------------------%
+
+    \titleformat*{\section}{\bfseries\large}
+    \mainmatter
+    %----------------------------------------------------------------%
+    % Dafter Bab
+    % Untuk menambahkan daftar bab, buat berkas bab misalnya `chapter-6` di direktori `chapters`, dan masukkan ke sini.
+    %----------------------------------------------------------------%
+    \input{01-chapter-1}
+    \input{02-chapter-2}
+    \input{03-chapter-3}
+    \input{04-chapter-4}
+    \input{05-chapter-5}
+    %----------------------------------------------------------------%
+
+    % Daftar pustaka
+    % Bibliography to Daftar Pustaka
+    \renewcommand{\bibname}{Daftar Pustaka}
+    \cleardoublepage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
+    %\printbibliography
+    %\bibliography{references}
+    %ZCZC RMS 202107023
+    %\bibstyle{apa}
+    \bibliography{references}
+    \bibliographystyle{apalike}
+
+    \backmatter
+    % Index
+    \appendix
+    \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
+
+    \cleardoublepage
+    \phantomsection
+    %\part*{Lampiran}
+    %\addcontentsline{toc}{part}{LAMPIRAN}
+
+    % Setting judul appendix
+    \chapterfont{\Large}
+    \titleformat{\chapter}[hang]
+      {\Large\bfseries}
+      {\chaptertitlename\ \thechapter.\ }{0pt}
+        {\Large\bfseries}
+    \titlespacing*{\chapter}{0pt}{-25pt}{10pt}
+
+    \input{0A1-appendix-1}
+    \input{0A2-appendix-2}
+
+\end{document}
+
+{% endraw %}
+```
+
+<br>
+### [Makefile](Makefile)
+
+```
+{% raw %}
+# (c) 2016-2021 Rahmat M. Samik-Ibrahim
+# REV03 Fri 23 Jul 2021 14:20:34 WIB
+# START Tue Jul 12 15:02:37 WIB 2016
+
+ALL:	thesis.pdf
+
+thesis.pdf:	thesis.tex
+	pdflatex thesis
+	pdflatex thesis
+	bibtex   thesis
+	pdflatex thesis
+	pdflatex thesis
+	python ../assets/scripts/includeScript.py < LaTeX05.pmd > LaTeX05.md
+
+clean:
+	rm -f *.aux *.log *.idx *.toc *.bbl *.blg
+	rm -f *.lof *.lol *.lot *.out
+
+cleanpdf:	clean
+	rm -f *.pdf
+
+{% endraw %}
+```
+

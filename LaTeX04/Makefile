@@ -14,6 +14,7 @@ DEPFILES= \
     mcdumbdumb.jpg       \
     Makefile             \
 
+ALL:	$(FILE1).pdf
 
 $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)

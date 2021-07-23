@@ -231,7 +231,7 @@ DEPFILES=                \
     Makefile             \
 
 
-ALL: $(FILE1).pdf LaTeX01.md
+ALL: $(FILE1).pdf
 
 $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)

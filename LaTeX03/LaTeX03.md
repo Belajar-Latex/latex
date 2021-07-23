@@ -16,7 +16,7 @@ permalink: /LaTeX03/
 # REV03 Fri 23 Jul 2021 14:20:34 WIB
 # START Tue Jul 12 15:02:37 WIB 2016
 
-all:	skripsi.pdf LaTeX03.md
+all:	skripsi.pdf
 
 skripsi.pdf:	skripsi.tex
 	pdflatex skripsi

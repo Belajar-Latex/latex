@@ -1,0 +1,27 @@
+---
+layout: "layout"
+title:  "LaTeX Tugas Akhir"
+permalink: /LaTeX05/
+---
+
+* [Downloard TARBALL](../tarballs/LaTeX05.tar.bz2)
+* [PDF](thesis.pdf)
+
+<br>
+### THESIS
+
+```
+{% raw %}
+(> thesis.tex <)
+{% endraw %}
+```
+
+<br>
+### [Makefile](Makefile)
+
+```
+{% raw %}
+(> Makefile <)
+{% endraw %}
+```
+

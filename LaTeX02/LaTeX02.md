@@ -32,7 +32,7 @@ PDFFILES= \
 
 
 # The default targets
-all: $(PDFFILES) LaTeX02.md
+all: $(PDFFILES)
 
 # 12 ######################################################################
 os00.pdf: src/os00.tex ${INCFILES} ${BRP} ${CHK00}
