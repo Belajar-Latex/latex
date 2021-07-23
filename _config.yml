@@ -1,0 +1,22 @@
+title:       "LaTeX"
+version:     "0002---23-Jul-2021"
+copyright:   "2021-2021"
+description: >- 
+  This is a
+  GitHub Page Template
+# baseurl: "" # e.g. /blog
+# url: ""     # e.g. http://example.com
+google_analytics: "UA-89852122-6"
+author:           "J. Walker"
+address:          "Box 7, Mawitaan, Bangalla."
+sitemap:          "true"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+urlweb:           "https://latex.vlsm.org/"
+urlcontact:       "TBA"
+urlgithub:        "https://github.com/Belajar-Latex/latex"
+urlghpage:        "https://latex.vlsm.org/"
+keywords:         "jekyll, latex"
+github:           [metadata]
+
