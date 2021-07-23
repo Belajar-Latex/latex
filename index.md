@@ -14,7 +14,7 @@ These are LaTeX examples.
 * [LaTeX: Tugas Akhir (Technical Report)](/LaTeX03/)
   * [PDF](LaTeX03/skripsi.pdf) (Result)
   * [TARBALL](tarballs/LaTeX03.tar.bz2) (Download)
-* [LaTeX: An eBook with Chapters and Parts](/LaTeX04)
+* [LaTeX: An eBook with Parts and Chapters](/LaTeX04)
   * [PDF](LaTeX04/JennyWren.pdf) (Result)
   * [TARBALL](tarballs/LaTeX04.tar.bz2) (Download)
   * [Our Mutual Friend by Dickens](https://jennywren.vlsm.org/LaTeX/JennyWren.pdf) ([More](https://jennywren.vlsm.org/))
