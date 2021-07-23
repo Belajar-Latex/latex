@@ -1,0 +1,18 @@
+---
+layout: "layout"
+title:  "LaTeX Tugas Akhir"
+permalink: /LaTeX04/
+---
+
+* [Downloard TARBALL](../tarballs/LaTeX04.tar.bz2)
+* [PDF](JennyWren.pdf)
+
+<br>
+### [Makefile](Makefile)
+
+```
+{% raw %}
+(> Makefile <)
+{% endraw %}
+```
+
