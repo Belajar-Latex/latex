@@ -7,10 +7,10 @@ all:
 	cd LaTeX02/; make; make clean;
 	cd LaTeX03/; make; make clean;
 	cd LaTeX04/; make; make clean;
-	tar cfj tarballs/LaTeX01.tar.bz2 LaTeX01/
-	tar cfj tarballs/LaTeX02.tar.bz2 LaTeX02/
-	tar cfj tarballs/LaTeX03.tar.bz2 LaTeX03/
-	tar cfj tarballs/LaTeX04.tar.bz2 LaTeX04/
+	tar cfj tarballs/LaTeX01.tar.bz2 LaTeX01/ assets/scripts/
+	tar cfj tarballs/LaTeX02.tar.bz2 LaTeX02/ assets/scripts/
+	tar cfj tarballs/LaTeX03.tar.bz2 LaTeX03/ assets/scripts/
+	tar cfj tarballs/LaTeX04.tar.bz2 LaTeX04/ assets/scripts/
 
 clean:
 	cd LaTeX01/; make cleanpdf;

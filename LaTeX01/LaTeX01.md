@@ -236,8 +236,6 @@ ALL: $(FILE1).pdf LaTeX01.md
 $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
-
-LaTeX01.md: LaTeX01.pmd Makefile example01.tex ucls-coat-grey.png
 	python ../assets/scripts/includeScript.py < LaTeX01.pmd > LaTeX01.md
 
 cleanpdf: clean

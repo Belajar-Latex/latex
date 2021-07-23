@@ -24,8 +24,6 @@ skripsi.pdf:	skripsi.tex
 	bibtex   skripsi
 	pdflatex skripsi
 	pdflatex skripsi
-
-LaTeX03.md: LaTeX03.pmd
 	python ../assets/scripts/includeScript.py < LaTeX03.pmd > LaTeX03.md
 
 clean:

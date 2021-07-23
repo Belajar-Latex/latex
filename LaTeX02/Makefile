@@ -31,6 +31,7 @@ os00.pdf: src/os00.tex ${INCFILES} ${BRP} ${CHK00}
 	 $(PDFLATEX) os00 && \
 	 mv os00.pdf .. )
 	 rm pdfbuild/*
+	 python ../assets/scripts/includeScript.py < LaTeX02.pmd > LaTeX02.md
 
 # 12 ######################################################################
 check00.pdf: src/check00.tex ${CHK00} ${INCFILES}
@@ -45,8 +46,6 @@ check00.pdf: src/check00.tex ${CHK00} ${INCFILES}
 	 rm pdfbuild/*
 
 
-LaTeX02.md: LaTeX02.pmd
-	python ../assets/scripts/includeScript.py < LaTeX02.pmd > LaTeX02.md
 
 # ## ######################################################################
 cleanpdf: clean
