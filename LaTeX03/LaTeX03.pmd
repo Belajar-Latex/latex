@@ -1,0 +1,18 @@
+---
+layout: "layout"
+title:  "LaTeX Tugas Akhir"
+permalink: /LaTeX03/
+---
+
+* [Downloard TARBALL](../tarballs/LaTeX03.tar.bz2)
+* [PDF](skripsi.pdf)
+
+<br>
+### [Makefile](Makefile)
+
+```
+{% raw %}
+(> Makefile <)
+{% endraw %}
+```
+

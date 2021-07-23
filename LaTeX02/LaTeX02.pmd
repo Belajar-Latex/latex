@@ -1,0 +1,18 @@
+---
+layout: "layout"
+title:  "LaTeX Beamer Presentation"
+permalink: /LaTeX02/
+---
+
+* [Downloard TARBALL](../tarballs/LaTeX02.tar.bz2)
+* [PDF](os00.pdf)
+
+<br>
+### [Makefile](Makefile)
+
+```
+{% raw %}
+(> Makefile <)
+{% endraw %}
+```
+
