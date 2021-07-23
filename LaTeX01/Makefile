@@ -10,7 +10,7 @@ DEPFILES=                \
     Makefile             \
 
 
-ALL: $(FILE1).pdf LaTeX01.md tarball
+ALL: $(FILE1).pdf LaTeX01.md
 
 $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)
@@ -18,9 +18,6 @@ $(FILE1).pdf: $(DEPFILES)
 
 LaTeX01.md: LaTeX01.pmd 
 	python ../assets/scripts/includeScript.py < LaTeX01.pmd > LaTeX01.md
-
-tarball:
-	tar cfj ../tarballs/LaTeX01.tar.bz2 ../LaTeX01/
 
 cleanpdf: clean
 	rm -f *.pdf
