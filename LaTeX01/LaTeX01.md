@@ -4,31 +4,34 @@ title:  "Listings"
 permalink: /LaTeX01/
 ---
 
-* [tabular.pdf](tabular.pdf)
-* [tabular.tex](tabular.tex)
+* [example01.pdf](example01.pdf)
+* [example01.tex](example01.tex)
 * [Makefile](Makefile)
 * [ucls-coat-grey.png](ucls-coat-grey.png)
 * [LaTeX01.pmd](LaTeX01.pmd)
 * [Downloard TARBALL](../tarballs/LaTeX01.tar.bz2)
 
 <br>
-### [tabular.tex](tabular.tex)
+### [example01.tex](example01.tex)
 
 ```
 {% raw %}
-\newcommand{\rev}{01 - 25-Feb-2021}
+\newcommand{\rev}{03 - 23-Jul-2021}
+% REV03 Fri 23 Jul 2021 12:53:33 WIB
 % REV02 Fri 23 Jul 2021 11:19:21 WIB
 % START Thu 25 Feb 2021 20:00:11 WIB
 
 \documentclass[12pt]{article}
 \usepackage[a4paper, margin=50pt]{geometry}
-\usepackage[pdftex]{graphicx}
 \usepackage[hidelinks]{hyperref}
 \usepackage{cellspace}
 \usepackage{colortbl}
 \usepackage{footnote}
 \usepackage{multirow}
-\usepackage{xcolor}
+\usepackage[dvipsnames,table,xcdraw]{xcolor}
+\usepackage[pdftex]{graphicx}
+\definecolor{links}{HTML}{0011FF}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
 \setlength\cellspacetoplimit{4pt}
 \setlength\cellspacebottomlimit{4pt}
 \newcommand\cincludegraphics[2][]{\raisebox{-0.88\height}{\includegraphics[#1]{#2}}}
@@ -208,8 +211,6 @@ and \texttt{May the fork() be with you!}\footnote{This is a Jedi Rip-Off}.
 \end{document}%
 % End of document.
 % %%%%%%%%%%%%%%%%
-
-
 {% endraw %}
 ```
 
@@ -219,10 +220,10 @@ and \texttt{May the fork() be with you!}\footnote{This is a Jedi Rip-Off}.
 ```
 {% raw %}
 # (c) 2021-2021 Rahmat M. Samik-Ibrahim
-# REV01 Thu 25 Feb 2021 20:44:03 WIB
+# REV02 Fri 23 Jul 2021 12:45:26 WIB
 # START Thu 25 Feb 2021 19:47:10 WIB
 
-FILE1=tabular
+FILE1=example01
 
 DEPFILES=                \
     $(FILE1).tex         \
@@ -236,7 +237,7 @@ $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
 
-LaTeX01.md: LaTeX01.pmd 
+LaTeX01.md: LaTeX01.pmd Makefile example01.tex ucls-coat-grey.png
 	python ../assets/scripts/includeScript.py < LaTeX01.pmd > LaTeX01.md
 
 cleanpdf: clean

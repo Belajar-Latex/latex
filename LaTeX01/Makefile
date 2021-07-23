@@ -1,8 +1,8 @@
 # (c) 2021-2021 Rahmat M. Samik-Ibrahim
-# REV01 Thu 25 Feb 2021 20:44:03 WIB
+# REV02 Fri 23 Jul 2021 12:45:26 WIB
 # START Thu 25 Feb 2021 19:47:10 WIB
 
-FILE1=tabular
+FILE1=example01
 
 DEPFILES=                \
     $(FILE1).tex         \
@@ -16,7 +16,7 @@ $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
 
-LaTeX01.md: LaTeX01.pmd 
+LaTeX01.md: LaTeX01.pmd Makefile example01.tex ucls-coat-grey.png
 	python ../assets/scripts/includeScript.py < LaTeX01.pmd > LaTeX01.md
 
 cleanpdf: clean

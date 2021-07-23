@@ -4,19 +4,19 @@ title:  "Listings"
 permalink: /LaTeX01/
 ---
 
-* [tabular.pdf](tabular.pdf)
-* [tabular.tex](tabular.tex)
+* [example01.pdf](example01.pdf)
+* [example01.tex](example01.tex)
 * [Makefile](Makefile)
 * [ucls-coat-grey.png](ucls-coat-grey.png)
 * [LaTeX01.pmd](LaTeX01.pmd)
 * [Downloard TARBALL](../tarballs/LaTeX01.tar.bz2)
 
 <br>
-### [tabular.tex](tabular.tex)
+### [example01.tex](example01.tex)
 
 ```
 {% raw %}
-(> tabular.tex <)
+(> example01.tex <)
 {% endraw %}
 ```
 
