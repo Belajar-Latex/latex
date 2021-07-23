@@ -11,7 +11,7 @@ These are LaTeX examples.
 * [LaTeX: A Beamer Presentation](/LaTeX02/)
   * [PDF](LaTeX02/os00.pdf) (Result)
   * [TARBALL](tarballs/LaTeX02.tar.bz2) (Download)
-* [LaTeX: Tugas Akhir Fasilkom UI)](/LaTeX03/)
+* [LaTeX: Tugas Akhir Fasilkom UI](/LaTeX03/)
   * [PDF](LaTeX03/skripsi.pdf) (Result)
   * [TARBALL](tarballs/LaTeX03.tar.bz2) (Download)
 * [LaTeX: Tesis IF-ITB](/LaTeX05/)
