@@ -5,7 +5,7 @@ permalink: /LaTeX04/
 ---
 
 * [Downloard TARBALL](../tarballs/LaTeX04.tar.bz2)
-* [PDF](JennyWren.pdf)
+* [PDF](Copy-And-Paste.pdf)
 
 <br>
 ### Copy-And-Paste.tex
@@ -20,6 +20,8 @@ permalink: /LaTeX04/
 \documentclass[12pt]{book}
 \usepackage[a4paper, margin=50pt]{geometry}
 \usepackage[dvipsnames,table,xcdraw]{xcolor}
+\usepackage{natbib}
+\usepackage{tocbibind}
 \usepackage{colortbl}
 \usepackage[hidelinks]{hyperref}
 \usepackage[pdftex]{graphicx}
@@ -82,7 +84,7 @@ Copy and Paste
 \addcontentsline{toc}{chapter}{Preface}
 
 StarBucks ipsum dolor J.CO Do Not!
-McD ipsum dolor Wendy’s Burger King. 
+McD ipsum dolor Wendy’s Burger King \citeauthor{book.buyya}. 
 KFC urna libero, in purus hana masa, sore wa tempura hokben.
 \\[1pt]
 
@@ -130,15 +132,18 @@ DEPFILES= \
     02-01.tex            \
     03-01.tex            \
     04-01.tex            \
+    bib.bib              \
     Full-License.tex     \
     ucls-coat.jpg        \
     Makefile             \
+
 
 ALL:	$(FILE1).pdf
 
 $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
+	bibtex   $(FILE1)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
         # # This is GitHub Page related. You might delete it ###############

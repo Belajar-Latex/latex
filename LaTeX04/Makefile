@@ -11,15 +11,18 @@ DEPFILES= \
     02-01.tex            \
     03-01.tex            \
     04-01.tex            \
+    bib.bib              \
     Full-License.tex     \
     ucls-coat.jpg        \
     Makefile             \
+
 
 ALL:	$(FILE1).pdf
 
 $(FILE1).pdf: $(DEPFILES)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
+	bibtex   $(FILE1)
 	pdflatex $(FILE1)
 	pdflatex $(FILE1)
         # # This is GitHub Page related. You might delete it ###############
