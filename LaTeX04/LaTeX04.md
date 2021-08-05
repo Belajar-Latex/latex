@@ -12,8 +12,8 @@ permalink: /LaTeX04/
 
 ```
 {% raw %}
-\newcommand{\rev}{02 - 05-Aug-2021}
-% REV02 Thu 05 Aug 2021 12:02:30 WIB
+\newcommand{\rev}{03 - 05-Aug-2021}
+% REV03 Thu 05 Aug 2021 13:00:00 WIB
 % REV01 Tue 03 Aug 2021 13:50:00 WIB
 % START Tue 03 Aug 2021 11:09:10 WIB
 
@@ -84,7 +84,7 @@ Copy and Paste
 \addcontentsline{toc}{chapter}{Preface}
 
 StarBucks ipsum dolor J.CO Do Not!
-McD ipsum dolor Wendy’s Burger King \citeauthor{book.buyya}. 
+McD ipsum dolor Wendy’s Burger King \citeauthor{book.buyya}, \citep{book.buyya}.
 KFC urna libero, in purus hana masa, sore wa tempura hokben.
 \\[1pt]
 
@@ -104,7 +104,7 @@ KFC urna libero, in purus hana masa, sore wa tempura hokben.
 \part{Four}
 \input{04-01.tex}
 \part{Take Note!}
-\input{Full-License.tex}
+\input{End.tex}
 
 % %%%%%%%%%%%%%%%%
 \end{document}%%%%
@@ -127,15 +127,15 @@ KFC urna libero, in purus hana masa, sore wa tempura hokben.
 FILE1=Copy-And-Paste
 
 DEPFILES= \
-    $(FILE1).tex         \
-    01-01.tex            \
-    02-01.tex            \
-    03-01.tex            \
-    04-01.tex            \
-    bib.bib              \
-    Full-License.tex     \
-    ucls-coat.jpg        \
-    Makefile             \
+    $(FILE1).tex  \
+    01-01.tex     \
+    02-01.tex     \
+    03-01.tex     \
+    04-01.tex     \
+    bib.bib       \
+    End.tex       \
+    ucls-coat.jpg \
+    Makefile      \
 
 
 ALL:	$(FILE1).pdf

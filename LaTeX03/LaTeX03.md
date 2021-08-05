@@ -12,6 +12,8 @@ permalink: /LaTeX03/
 
 ```
 {% raw %}
+% REV01 Thu 05 Aug 2021 12:48:47 WIB (RMS)
+% START Thu 05 Aug 2021 12:48:47 WIB (RMS)
 %
 % Template Laporan Skripsi/Thesis 
 %
@@ -140,7 +142,8 @@ permalink: /LaTeX03/
 	\include{lampiran}
 \end{appendix}
 
-\end{document}{% endraw %}
+\end{document}
+{% endraw %}
 ```
 
 <br>
