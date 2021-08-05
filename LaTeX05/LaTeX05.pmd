@@ -1,6 +1,6 @@
 ---
 layout: "layout"
-title:  "Contoh Tesis IT-ITB (LaTeX)"
+title:  "Contoh Tesis IF-ITB (LaTeX)"
 author: "Petra Novandi"
 address: "Jakarta"
 permalink: /LaTeX05/
