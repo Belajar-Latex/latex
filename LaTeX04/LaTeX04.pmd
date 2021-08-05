@@ -8,11 +8,11 @@ permalink: /LaTeX04/
 * [PDF](JennyWren.pdf)
 
 <br>
-### JennyWren.tex
+### Copy-And-Paste.tex
 
 ```
 {% raw %}
-(> JennyWren.tex <)
+(> Copy-And-Paste.tex <)
 {% endraw %}
 ```
 

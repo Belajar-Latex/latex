@@ -18,7 +18,7 @@ These are LaTeX examples.
   * [PDF](LaTeX05/thesis.pdf) (Result)
   * [TARBALL](tarballs/LaTeX05.tar.bz2) (Download)
 * [LaTeX: An eBook with Parts and Chapters](/LaTeX04)
-  * [PDF](LaTeX04/JennyWren.pdf) (Result)
+  * [PDF](LaTeX04/Copy-And-Paste.pdf) (Result)
   * [TARBALL](tarballs/LaTeX04.tar.bz2) (Download)
   * [Our Mutual Friend by Dickens](https://jennywren.vlsm.org/LaTeX/JennyWren.pdf) ([More](https://jennywren.vlsm.org/))
 
