@@ -1,8 +1,15 @@
-# (c) 2021-2021 Rahmat M. Samik-Ibrahim
-# REV02 Thu 08 Jul 2021 17:02:48 WIB
-# START Thu 08 Jul 2021 10:19:33 WIB
+# (c) 2021-2022 Rahmat M. Samik-Ibrahim
+# REV03: Sun 24 Jul 2022 23:00
+# REV02: Thu 08 Jul 2021 17:02
+# REV01: Sun 24 Jul 2022 23:00
+# START: Thu 08 Jul 2021 10:00
 
-all:
+SITEURL="latex.vlsm.org"
+
+ALL: latex .siteHack
+	@echo "xyzzy... plugh"
+
+latex:
 	cd LaTeX01/; make; make clean;
 	cd LaTeX02/; make; make clean;
 	cd LaTeX03/; make; make clean;
@@ -14,6 +21,11 @@ all:
 	tar cfj tarballs/LaTeX04.tar.bz2 LaTeX04/ assets/scripts/
 	tar cfj tarballs/LaTeX05.tar.bz2 LaTeX05/ assets/scripts/
 
+
+.siteHack: _site/sitemap.xml
+	@bash  .siteHack $(SITEURL)
+	@touch .siteHack
+	
 clean:
 	rm -f tarballs/*.tar.bz2;
 	cd LaTeX01/; make cleanpdf;
@@ -21,7 +33,5 @@ clean:
 	cd LaTeX03/; make cleanpdf;
 	cd LaTeX04/; make cleanpdf;
 	cd LaTeX05/; make cleanpdf;
-	
-.phony: clean tarballs
 
-
+.phony: clean .siteHack
